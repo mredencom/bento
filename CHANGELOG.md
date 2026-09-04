@@ -3,6 +3,18 @@ Changelog
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Added
+
+- `send_queue_capacity`, `buf_pool_capacity` & `send_loop_count` fields on the `statsd` metrics exporter to tune the underlying `go-statsd` client and avoid packet loss under high throughput @triddell
+
+## 1.21.1 - 2026-08-26
+
+### Fixed
+
+- `kafka_franz` output field `broker_write_max_bytes` misconfigured (introduced in version 1.21.0) @jem-davies
+
 ## 1.21.0 - 2026-08-21
 
 ### Added
