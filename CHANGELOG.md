@@ -3,11 +3,14 @@ Changelog
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 1.21.2 - 2026-09-11 
 
-### Added
+### Changed
 
-- `send_queue_capacity`, `buf_pool_capacity` & `send_loop_count` fields on the `statsd` metrics exporter to tune the underlying `go-statsd` client and avoid packet loss under high throughput @triddell
+ - Updated to Go version 1.27.1 @gregfurman
+ - migrated MSSQL driver to official microsoft/go-mssqldb @cmelanson
+ - upgraded apache/pulsar client to v0.21.0 @slachiewicz
+ - upgraded gosnowflake to v2 @jem-davies
 
 ## 1.21.1 - 2026-08-26
 
